@@ -1,0 +1,114 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    .logo {
+        img {
+            height: 60px;
+        }
+    }
+
+    .nav {
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+
+            li {
+                a {
+                    color: $text-color;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .search {
+        position: relative;
+        display: inline-block;
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            fill: #fff;
+            width: 16px;
+            height: 16px;
+        }
+
+        input {
+            padding: 8px 12px 8px 35px;
+            border: none;
+            border-radius: 20px;
+            background-color: $search-background-color;
+            color: $text-color;
+            outline: none;
+        }
+    }
+}
+
+.hero {
+    height: 100%;
+    background-image: url('/assets/images/banner2.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 500px 100px 0px 100px;
+    position: relative;
+    overflow: hidden;
+    //background: rgba(0, 0, 0, 0.5);
+
+
+    .hero-h {
+        position: relative;
+        z-index: 2;
+
+        h1 {
+            font-size: 58px;
+            font-weight: bold;
+        }
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-p {
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        background-color: #E50914;
+        color: #fff;
+        padding: 12px 25px;
+        border-radius: 8px;
+        font-size: 16px;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+
+
+        svg {
+            width: 28px;
+            height: 28px;
+            fill: currentColor;
+        }
+    }
+}

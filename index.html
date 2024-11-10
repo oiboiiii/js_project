@@ -5,10 +5,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="StreamVibe Logo">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies & Shows</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Subscriptions</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001a1.007 1.007 0 0 0-.196.196l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.196-.196zm-5.742 1a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+            </svg>
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero-h">
+                <h1>The Best Streaming Experience</h1>
+            </div>
+        </section>
+        <section class="content">
+            <div class="content-p">
+                <p>StreamVibe is the best streaming experience for watching your favorite movies and shows on demand,
+                    anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest
+                    blockbusters, classic movies, popular TV shows, and more. You can also create your own watchlists,
+                    so you can easily find the content you want to watch.</p>
+                <a href="#" class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-play-fill" viewBox="0 0 16 16">
+                        <path d="M11.596 8.697l-6-4A.5.5 0 0 0 5 5v6a.5.5 0 0 0 .796.405l6-4a.5.5 0 0 0 0-.808z" />
+                    </svg>
+                    Start Watching Now</a>
+            </div>
+        </section>
+        <section class="category-section">
+            <div>
+                <h2>Explore our wide variety of categories</h2>
+                <p>Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to
+                    learn something new</p>
+                <div class="carousel-container">
+                    <!-- <button class="carousel-arrow left" onclick="scrollLeft()">&#10094;</button> -->
+
+                    <div class="category-carousel">
+                        <div class="category-card">
+                            <div class="category-images action"></div>
+                            <h3>Action</h3>
+                        </div>
+                        <div class="category-card">
+                            <div class="category-images adventure"></div>
+                            <h3>Adventure</h3>
+                        </div>
+                        <div class="category-card">
+                            <div class="category-images comedy"></div>
+                            <h3>Comedy</h3>
+                        </div>
+                        <div class="category-card">
+                            <div class="category-images drama"></div>
+                            <h3>Drama</h3>
+                        </div>
+                        <div class="category-card">
+                            <div class="category-images horror"></div>
+                            <h3>Horror</h3>
+                        </div>
+                    </div>
+
+                    <!-- <button class="carousel-arrow right" onclick="scrollRight()">&#10095;</button> -->
+        </section>
+    </main>
 
     <script src="./assets/script/"></script>
 </body>
