@@ -1,0 +1,206 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; 
+    color: #fff;
+    overflow-x: hidden;
+    overflow-y: hidden; 
+}
+
+/* Навбар */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 80%; 
+    background-color: #000; 
+    color: #fff;
+}
+
+.navbar-logo img {
+    height: 40px;
+}
+
+
+.navbar-links-container {
+    display: inline-block; 
+    border: 3px solid #1F1F1F;
+    border-radius:  10px; 
+    padding: 8px 30px 8px 30px; 
+    gap: 16px;
+}
+
+
+.navbar-links {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+    padding: 8px 10px 8px 10px;
+}
+
+.navbar-links li {
+    margin: 0;
+}
+
+.navbar-links a {
+    color: #f2f1f5;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px; 
+    border-radius: 15px; 
+    transition: background-color 0.3s, color 0.3s;
+    padding: 10px 8px 10px 8px;
+}
+
+
+.navbar-links a:hover {
+    background-color: #1F1F1F; 
+    color: #fff; 
+    border-radius: 10px;
+}
+
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.icon-button:hover {
+    color: #ddd;
+}
+
+/* Основной контент */
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 400px 20px;
+    margin: 0 auto ;
+    max-width: 80%; 
+    min-height: 100vh;
+    background-image: url('./images/captain.png');
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    border-radius: 20px; 
+    border: 2px solid #1F1F1F; 
+    overflow: hidden;
+}
+
+
+.content::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%; 
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    z-index: 1;
+    
+}
+
+.content h1, .content p {
+    position: relative;
+    z-index: 2;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: black;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    gap: 14px;
+}
+
+.play-button {
+    background-color: red;
+}
+
+button:hover {
+    background-color: #1F1F1F;
+}
+
+
+.navigation-container {
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.arrow {
+    background-color: black; 
+    border: none;
+    color: #fff;
+    padding: 5px 15px; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px; 
+    transition:  0.3s;
+}
+
+.arrow:hover {
+    background-color: #1F1F1F; 
+}
+
+.indicator {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; 
+    margin: 0 20px; 
+
+}
+
+.line {
+    width: 23px;
+    height: 4px;
+    background-color: #fff;
+    transition: background-color 0.3s;
+    gap: 0px;
+    border-radius: 100px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.line.active {
+    background-color: #d30808; 
+}
+
+
+/* Адаптивность */
+
