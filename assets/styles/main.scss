@@ -1,7 +1,7 @@
 @import 'vars';
 @import 'header';
 @import 'maincarousel';
-@import 'carousel.scss';
+@import 'carousel';
 @import 'devices';
 @import 'questions';
 @import 'dropdown';
@@ -17,14 +17,10 @@
 body {
     font-family: Arial, sans-serif;
     background-color: $background-color;
-    color: $text-color;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 a {

@@ -5,22 +5,15 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: black; 
-    color: #fff;
-    overflow-x: hidden;
-    overflow-y: hidden; 
-}
+
 
 /* Навбар */
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0 auto;
-    max-width: 80%; 
-    background-color: #000; 
+    background-color: #000;
     color: #fff;
 }
 
@@ -30,10 +23,10 @@ body {
 
 
 .navbar-links-container {
-    display: inline-block; 
+    display: inline-block;
     border: 3px solid #1F1F1F;
-    border-radius:  10px; 
-    padding: 8px 30px 8px 30px; 
+    border-radius: 10px;
+    padding: 8px 30px 8px 30px;
     gap: 16px;
 }
 
@@ -53,16 +46,16 @@ body {
     color: #f2f1f5;
     text-decoration: none;
     font-size: 16px;
-    padding: 8px 12px; 
-    border-radius: 15px; 
+    padding: 8px 12px;
+    border-radius: 15px;
     transition: background-color 0.3s, color 0.3s;
     padding: 10px 8px 10px 8px;
 }
 
 
 .navbar-links a:hover {
-    background-color: #1F1F1F; 
-    color: #fff; 
+    background-color: #1F1F1F;
+    color: #fff;
     border-radius: 10px;
 }
 
@@ -93,17 +86,14 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 400px 20px;
-    margin: 0 auto ;
-    max-width: 80%; 
-    min-height: 100vh;
-    background-image: url('./images/captain.png');
-    background-size: contain; 
-    background-position: center; 
+    padding: 400px 20px 20px 20px;
+    margin: 0 auto;
+    max-width: 71%;
+    background-image: url('/assets/images/captain.png');
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
-    border-radius: 20px; 
-    border: 2px solid #1F1F1F; 
+    background-attachment: fixed;
     overflow: hidden;
 }
 
@@ -114,15 +104,17 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%; 
+    height: 100%;
     background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
     z-index: 1;
-    
+
 }
 
-.content h1, .content p {
+.content h1,
+.content p {
     position: relative;
     z-index: 2;
+    color: white;
 }
 
 .buttons {
@@ -163,18 +155,18 @@ button:hover {
 }
 
 .arrow {
-    background-color: black; 
+    background-color: black;
     border: none;
     color: #fff;
-    padding: 5px 15px; 
+    padding: 5px 15px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 20px; 
-    transition:  0.3s;
+    font-size: 20px;
+    transition: 0.3s;
 }
 
 .arrow:hover {
-    background-color: #1F1F1F; 
+    background-color: #1F1F1F;
 }
 
 .indicator {
@@ -182,8 +174,8 @@ button:hover {
     gap: 5px;
     justify-content: center;
     align-items: center;
-    flex-grow: 1; 
-    margin: 0 20px; 
+    flex-grow: 1;
+    margin: 0 20px;
 
 }
 
@@ -198,9 +190,8 @@ button:hover {
 }
 
 .line.active {
-    background-color: #d30808; 
+    background-color: #d30808;
 }
 
 
 /* Адаптивность */
-
