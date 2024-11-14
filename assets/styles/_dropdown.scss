@@ -11,7 +11,7 @@
   gap: 15px;
 
   h1 {
-    color: white; 
+    color: white;
   }
 }
 
@@ -57,12 +57,12 @@ h1 {
   }
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #000;
-  margin: 0;
-  padding: 0;
-}
+// body {
+//   font-family: Arial, sans-serif;
+//   background-color: #000;
+//   margin: 0;
+//   padding: 0;
+// }
 
 .movie-card {
   width: 800px;
@@ -96,71 +96,86 @@ body {
 /* Для смартфонов с экраном 375px и менее */
 @media (max-width: 375px) {
   .movies-container {
-    padding: 10px; /* Уменьшение отступов */
+    padding: 10px;
+    /* Уменьшение отступов */
   }
 
   .card {
-    flex: 0 0 calc(100% - 10px); /* Карточки занимают всю ширину экрана */
+    flex: 0 0 calc(100% - 10px);
+    /* Карточки занимают всю ширину экрана */
     width: calc(100% - 10px);
   }
 
   .movie-card {
-    width: 100%; /* Карточка фильма занимает всю ширину */
+    width: 100%;
+    /* Карточка фильма занимает всю ширину */
   }
 
   .movie-card .detailImage {
-    height: 200px; /* Уменьшение высоты изображения */
+    height: 200px;
+    /* Уменьшение высоты изображения */
   }
 
   .movie-card .movie-info {
-    padding: 15px; /* Уменьшение отступов */
+    padding: 15px;
+    /* Уменьшение отступов */
   }
 }
 
 /* Для телефонов/планшетов с экраном от 768px до 1279px */
 @media (min-width: 768px) and (max-width: 1279px) {
   .movies-container {
-    padding: 15px; /* Стандартные отступы для планшетов */
+    padding: 15px;
+    /* Стандартные отступы для планшетов */
   }
 
   .card {
-    flex: 0 0 calc(50% - 10px); /* Две карточки в ряд */
+    flex: 0 0 calc(50% - 10px);
+    /* Две карточки в ряд */
     width: calc(50% - 10px);
   }
 
   .movie-card {
-    width: 90%; /* Карточка фильма занимает 90% ширины */
+    width: 90%;
+    /* Карточка фильма занимает 90% ширины */
   }
 
   .movie-card .detailImage {
-    height: 300px; /* Увеличение высоты изображения для планшетов */
+    height: 300px;
+    /* Увеличение высоты изображения для планшетов */
   }
 
   .movie-card .movie-info {
-    padding: 20px; /* Стандартные отступы */
+    padding: 20px;
+    /* Стандартные отступы */
   }
 }
 
 /* Для десктопов с экраном 1280px и более */
 @media (min-width: 1280px) {
   .movies-container {
-    padding: 20px; /* Стандартные отступы для десктопов */
+    padding: 20px;
+    /* Стандартные отступы для десктопов */
   }
 
   .card {
-    flex: 0 0 calc(20% - 10px); /* Четыре карточки в ряд */
+    flex: 0 0 calc(20% - 10px);
+    /* Четыре карточки в ряд */
     width: calc(20% - 10px);
   }
 
   .movie-card {
-    width: 800px; /* Фиксированная ширина для карточки фильма */
+    width: 800px;
+    /* Фиксированная ширина для карточки фильма */
   }
 
   .movie-card .detailImage {
-    height: 400px; /* Высота изображения для десктопов */
+    height: 400px;
+    /* Высота изображения для десктопов */
   }
 
   .movie-card .movie-info {
-    padding: 20px; /* Стандартные отступы */
+    padding: 20px;
+    /* Стандартные отступы */
   }
 }
