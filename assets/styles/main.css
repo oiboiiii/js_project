@@ -70,12 +70,14 @@
   width: 64%;
   margin: 0 auto;
   text-align: center;
+  color: white;
 }
 
 .cont-p p {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 20px;
+  color: white;
 }
 .cont-p .btn {
   background-color: #E50914;
@@ -101,6 +103,7 @@
   font-size: 24px;
   margin-top: 200px;
   margin-bottom: 28px;
+  color: #fff;
 }
 .category-section p {
   font-size: 14px;
@@ -186,21 +189,12 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: black;
-  color: #fff;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
 /* Навбар */
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 0 auto;
-  max-width: 80%;
   background-color: #000;
   color: #fff;
 }
@@ -270,17 +264,14 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 400px 20px;
+  padding: 400px 20px 20px 20px;
   margin: 0 auto;
-  max-width: 80%;
-  min-height: 100vh;
-  background-image: url("./images/captain.png");
+  max-width: 71%;
+  background-image: url("/assets/images/captain.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  border-radius: 20px;
-  border: 2px solid #1F1F1F;
   overflow: hidden;
 }
 
@@ -295,9 +286,11 @@ body {
   z-index: 1;
 }
 
-.content h1, .content p {
+.content h1,
+.content p {
   position: relative;
   z-index: 2;
+  color: white;
 }
 
 .buttons {
@@ -575,7 +568,6 @@ button:hover {
   }
 }
 .movies-container {
-  background-color: #000;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -596,7 +588,7 @@ button:hover {
 }
 
 h1 {
-  color: #010101;
+  color: #ffffff;
 }
 
 .block {
@@ -829,14 +821,10 @@ h1 {
 body {
   font-family: Arial, sans-serif;
   background-color: #1E1E1E;
-  color: #fff;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 a {
