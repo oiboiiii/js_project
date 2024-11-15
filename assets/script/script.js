@@ -1,35 +1,65 @@
- document.addEventListener('DOMContentLoaded', function() {
-    const images = [
-        './assets/images/captain.png', 
-        './assets/images/fightclub.png',
-        './assets/images/heavens.png',
-    ];
+/*Часто задаваемые вопросы*/
+function toggleAnswer(index) {
+    const answers = document.querySelectorAll('.faq-answer');
+    const toggles = document.querySelectorAll('.faq-toggle');
 
-    let currentIndex = 0;
-
-    const contentElement = document.querySelector('.content');
-    const imgElement = document.createElement('img');
-    imgElement.src = images[currentIndex];
-    imgElement.style.maxWidth = '100%';
-    imgElement.style.borderRadius = '10px';
-    imgElement.style.marginTop = '20px';
-    contentElement.appendChild(imgElement);
-
-    const leftArrow = document.querySelector('.arrow.left');
-    const rightArrow = document.querySelector('.arrow.right');
-
-    leftArrow.addEventListener('click', () => {
-        currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
-        imgElement.src = images[currentIndex];
+    answers.forEach((answer, i) => {
+        if (i + 1 === index) {
+            const isVisible = answer.style.display === "block";
+            answer.style.display = isVisible ? "none" : "block";
+            toggles[i].textContent = isVisible ? "+" : "-";
+        } else {
+            answer.style.display = "none";
+            toggles[i].textContent = "+";
+        }
     });
+}
+toggleAnswer(index);
 
-    rightArrow.addEventListener('click', () => {
-        currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
-        imgElement.src = images[currentIndex];
+/*Карусель*/
+const carouselImages = ['../images/captain.png', '../images/rev1.jpeg','../images/rev2.jpeg'];
+let currentIndex = 0;
+
+const leftArrow = document.querySelector('.arrow.left');
+const rightArrow = document.querySelector('.arrow.right');
+const contentContainer = document.querySelector('.content');
+const indicatorLines = document.querySelectorAll('.line');
+
+function updateCarousel() {
+    contentContainer.style.backgroundImage = `url('${carouselImages[currentIndex]}')`;
+    contentContainer.style.backgroundSize = '';
+    contentContainer.style.backgroundPosition = 'center';
+    contentContainer.style.backgroundRepeat = 'no-repeat';
+
+    indicatorLines.forEach((line, index) => {
+        line.classList.remove('active');
+        if (index === currentIndex) {
+            line.classList.add('active');
+        }
     });
-}); 
+}
 
+leftArrow.addEventListener('click', () => {
+    currentIndex = (currentIndex === 0) ? carouselImages.length - 1 : currentIndex - 1;
+    updateCarousel();
+});
 
+rightArrow.addEventListener('click', () => {
+    currentIndex = (currentIndex === carouselImages.length - 1) ? 0 : currentIndex + 1;
+    updateCarousel();
+});
+updateCarousel();
+
+function openVideo() {
+    window.open("https://www.youtube.com/watch?v=QPRtU7EqQy0", "_blank"); 
+}
+openVideo();
+
+    function toggleMenu() {
+        const navbarMenu = document.querySelector('.navbar-links-container');
+        navbarMenu.classList.toggle('active');
+    }
+toggleMenu();
 
 //Каталог фильмов
 fetch('../json/info.json')

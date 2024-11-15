@@ -47,7 +47,7 @@
                     anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest
                     blockbusters, classic movies, popular TV shows, and more. You can also create your own watchlists,
                     so you can easily find the content you want to watch.</p>
-                <a href="#" class="btn">
+                <a href="./assets/pages/dropdown-catalog.html" class="btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-play-fill" viewBox="0 0 16 16">
                         <path d="M11.596 8.697l-6-4A.5.5 0 0 0 5 5v6a.5.5 0 0 0 .796.405l6-4a.5.5 0 0 0 0-.808z" />
@@ -92,76 +92,105 @@
 
 
     <!-- Questions  -->
-    <section>
+    <section class="faq-section">
+        <div class="faq-header">
+            <div class="faq-text">
+                <h1>Часто задаваемые вопросы</h1>
+                <p>Есть вопросы? У нас есть ответы! Проверь наш блок ЧЗВ,
+                чтобы найти ответы на часто задаваемые вопросы про StreamVibe.</p>
+            </div>
+            <button class="ask-button">Спросить</button>
+        </div>
+
         <div class="faq-container">
-            <div class="faq">
-                <div class="faq-text">
-                    <h2 class="faq-title">Часто задаваемые вопросы</h2>
-                    <p class="faq-answer">Есть вопросы? У нас есть ответы! Посетите наш раздел часто задаваемых
-                        вопросов, чтобы найти ответы на наиболее распространенные вопросы о StreamVibe.</p>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(1)">
+                    <span class="faq-number">01</span>
+                    <span>Что такое StreamVibe?</span>
+                    <span class="faq-toggle">+</span>
                 </div>
-                <button class="faq-button">Задать вопрос</button>
-            </div>
-
-            <div class="faq-list">
-                <div class="faq-list1">
-                    <div class="faq-item">
-                        <img class="faq-number" src="./assets/images/1.png" alt="1">
-                        <div class="faq-detailed">
-                            <h4 class="faq-question">Что такое StreamVibe?</h4>
-                            <p class="faq-answer">StreamVibe — это потоковый сервис, позволяющий смотреть фильмы и шоу
-                                по запросу.</p>
-                        </div>
-                        <a href="#"><img class="faq-ikon" src="./assets/images/Vector.svg" alt="-"></a>
-                    </div>
-
-                    <div class="faq-item">
-                        <img class="faq-number" src="./assets/images/2.png" alt="2">
-                        <h4 class="faq-question">Сколько стоит StreamVibe?</h4>
-                        <a href="#"><img class="faq-ikon" src="./assets/images/Icon1.svg" alt="+"></a>
-                    </div>
-
-                    <div class="faq-item">
-                        <img class="faq-number" src="./assets/images/3.png" alt="3">
-                        <h4 class="faq-question">Какой контент доступен на StreamVibe?</h4>
-                        <a href="#"><img class="faq-ikon" src="./assets/images/Icon1.svg" alt="+"></a>
-                    </div>
-
-                    <div class="faq-item">
-                        <img class="faq-number" src="./assets/images/4.png" alt="4">
-                        <h4 class="faq-question">Как я могу смотреть StreamVibe?</h4>
-                        <a href="#"><img class="faq-ikon" src="./assets/images/Icon1.svg" alt="+"></a>
-                    </div>
-                </div>
-
-                <div class="faq-list2">
-
-                    <div class="faq-item">
-                        <img class="faq-number" src="./assets/images/5.png" alt="5">
-                        <h4 class="faq-question">Как мне зарегистрироваться в StreamVibe?</h4>
-                        <a href="#"><img class="faq-ikon" src="./assets/images/Icon1.svg" alt="+"></a>
-                    </div>
-
-                    <div class="faq-item">
-                        <img class="faq-number" src="./assets/images/6.png" alt="6">
-                        <h4 class="faq-question">Что такое бесплатная пробная версия StreamVibe?</h4>
-                        <a href="#"><img class="faq-ikon" src="./assets/images/Icon1.svg" alt="+"></a>
-                    </div>
-
-
-                    <div class="faq-item">
-                        <img class="faq-number" src="./assets/images/7.png" alt="7">
-                        <h4 class="faq-question">Как мне связаться со службой поддержки StreamVibe?</h4>
-                        <a href="#"><img class="faq-ikon" src="./assets/images/Icon1.svg" alt="+"></a>
-                    </div>
-
-                    <div class="faq-item">
-                        <img class="faq-number" src="./assets/images/8.png" alt="8">
-                        <h4 class="faq-question">Какие способы оплаты StreamVibe?</span>
-                            <a href="#"><img class="faq-ikon" src="./assets/images/Icon1.svg" alt="+"></a>
-                    </div>
+                <div class="faq-answer" id="answer1">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum animi dignissimos illum.
                 </div>
             </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(2)">
+                    <span class="faq-number">02</span>
+                    <span>Сколько стоит StreamVibe?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" id="answer2">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet numquam magni cum.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(3)">
+                    <span class="faq-number">03</span>
+                    <span>Какой контент доступен на StreamVibe?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" id="answer3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque totam expedita minus!
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(4)">
+                    <span class="faq-number">04</span>
+                    <span>Как я могу просматривать StreamVibe?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" id="answer4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio at pariatur sint.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(5)">
+                    <span class="faq-number">05</span>
+                    <span>Как я могу подписаться на StreamVibe?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" id="answer5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eligendi blanditiis voluptas?
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(6)">
+                    <span class="faq-number">06</span>
+                    <span>Есть ли бесплатный просмотр на StreamVibe?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" id="answer6">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat delectus voluptatum error.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(7)">
+                    <span class="faq-number">07</span>
+                    <span>Как я могу связаться со службой поддержки StreamVibe?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" id="answer7">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt maiores eligendi laboriosam!
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(8)">
+                    <span class="faq-number">08</span>
+                    <span>Какие есть методы оплаты StreamVibe?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" id="answer8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusantium sit cum?
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- DEVICES -->
