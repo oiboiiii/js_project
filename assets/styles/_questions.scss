@@ -1,7 +1,13 @@
-body {
+// body {
+//     margin: 0 auto;
+//     max-width: 100%;
+//     background-color: #1E1E1E;
+//     padding: 50px 50px;
+// }
+.faq-container{
     margin: 0 auto;
-    max-width: 100%;
-    background-color: #1E1E1E;
+    max-width: 1920px;
+    gap: 50px;
     padding: 50px 50px;
 }
 
@@ -42,6 +48,7 @@ body {
     justify-content: space-between;
     align-items: end;
     flex-wrap: wrap;
+    gap: 50px;
 }
 
 .faq-number {
@@ -67,8 +74,9 @@ body {
 .faq-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 50px;
     justify-content: space-around;
+    padding: 50px 50px;
 }
 
 .faq-item {
