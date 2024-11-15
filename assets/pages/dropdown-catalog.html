@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Галерея фильмов</title>
 </head>
 
@@ -13,38 +12,52 @@
     <!-- Карусель -->
     <div class="navbar">
         <div class="navbar-logo">
-            <img src="./assets/images/Logo1.png" alt="Логотип" />
+            <img src="../images/Logo1 copy.png" alt="Логотип" />
+        </div>
+        <div class="burger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         <div class="navbar-links-container">
             <ul class="navbar-links">
                 <li><a href="#">Домой</a></li>
-                <li><a href="#">Кино и шоу</a></li>
+                <li><a href="#">Кино</a></li>
                 <li><a href="#">Поддержка</a></li>
                 <li><a href="#">Описание</a></li>
             </ul>
-        </div>
+        </div>        
         <div class="navbar-icons">
-            <button class="icon-button"><i class="fas fa-search"></i></button> <!-- Иконка лупы -->
-            <button class="icon-button"><i class="fas fa-bell"></i></button> <!-- Иконка звонка -->
+            <button class="icon-button"><i class="fas fa-search"></i></button> 
+            <button class="icon-button"><i class="fas fa-bell"></i></button> 
         </div>
     </div>
-
     <div class="content">
         <h1>Мстители: Финал</h1>
         <p>С помощью оставшихся союзников Мстители должны собраться еще раз,
-            чтобы исправить действия Таноса <br> и положить конец хаосу во вселенной,
+            чтобы исправить действия Таноса <br> и положить конец хаосу во вселенной, 
             какие бы последствия их ни ждали ... Отомстить за павших.</p>
         <div class="buttons">
-            <button class="play-button">
+            <button class="play-button" onclick="openVideo()">
                 <i class="fas fa-play"></i>
-                Play Now
+                Просмотр
             </button>
-            <button><i class="fas fa-plus"></i></button> <!-- Кнопка с иконкой плюса -->
-            <button><i class="fas fa-thumbs-up"></i></button> <!-- Кнопка с иконкой like -->
-            <button><i class="fas fa-volume-up"></i></button> <!-- Кнопка с иконкой звука -->
-        </div>
+            <div class="icon-buttons">
+                <button><i class="fas fa-plus"></i></button>
+                <button><i class="fas fa-thumbs-up"></i></button>
+                <button><i class="fas fa-volume-up"></i></button>
+            </div>
+        </div>  
+        <div class="navigation-container">
+            <button class="arrow left" onclick="">&#9668;</button> 
+            <div class="indicator">
+                <span class="line active"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <button class="arrow right" onclick="">&#9658;</button> 
+        </div>   
     </div>
-    <!-- навигация -->
 
     <main class="main">
         <!-- <img src="../images/Container.png" class="main__logo" alt="main__logo"> -->
