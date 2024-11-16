@@ -1,19 +1,33 @@
-
-
 /*Карусель*/
-const carouselImages = ['../images/captain.png', '../images/rev1.jpeg', '../images/rev2.jpeg'];
+const carouselImages = [
+    '../images/captain.png',
+    '../images/Властелин_колец2.jpg',
+    '../images/Валли.webp'
+];
+const carouselTitles = [
+    'Мстители: Финал',
+    'Властелин колец',
+    'Валл-и'
+];
+const carouselDescriptions = [
+    'С помощью оставшихся союзников Мстители должны собраться еще раз, чтобы исправить действия Таноса...',
+    'Моя прелесть...',
+    'Он делал свое дело 700 лет. Теперь ему предстоит открыть свое истинное предназначение.'
+];
+
 let currentIndex = 0;
 
 const leftArrow = document.querySelector('.arrow.left');
 const rightArrow = document.querySelector('.arrow.right');
 const contentContainer = document.querySelector('.carousel_content');
+const titleElement = document.querySelector('.carousel_content h1');
+const descriptionElement = document.querySelector('.content-p');
 const indicatorLines = document.querySelectorAll('.line');
 
 function updateCarousel() {
     contentContainer.style.backgroundImage = `url('${carouselImages[currentIndex]}')`;
-    contentContainer.style.backgroundSize = '';
-    contentContainer.style.backgroundPosition = 'center';
-    contentContainer.style.backgroundRepeat = 'no-repeat';
+    titleElement.textContent = carouselTitles[currentIndex];
+    descriptionElement.textContent = carouselDescriptions[currentIndex];
 
     indicatorLines.forEach((line, index) => {
         line.classList.remove('active');
@@ -44,6 +58,7 @@ function toggleMenu() {
     navbarMenu.classList.toggle('active');
 }
 toggleMenu();
+
 //Каталог фильмов
 fetch('../json/info.json')
     .then(response => {
