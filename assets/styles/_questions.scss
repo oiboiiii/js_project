@@ -7,20 +7,20 @@
 
 body {
     background-color: #000;
-    color: #fff;
+
 }
 
 .faq-section {
-    max-width: 900px;
+    max-width: 80%;
     margin: 0 auto;
-    padding: 20px;
+
 }
 
 .faq-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin: 10% 0 2% 0;
 }
 
 .faq-text {
@@ -73,8 +73,8 @@ body {
 .faq-question {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start; 
-    gap: 10px; 
+    justify-content: flex-start;
+    gap: 10px;
     font-size: 1.1rem;
     text-align: left;
 }
@@ -87,10 +87,14 @@ body {
     border-radius: 4px;
 }
 
+.faq-span {
+    color: #fff;
+}
+
 .faq-toggle {
     color: red;
     font-size: 1.5rem;
-    margin-left: auto; 
+    margin-left: auto;
 }
 
 .faq-answer {
@@ -106,10 +110,12 @@ body {
     .faq-container {
         grid-template-columns: 1fr;
     }
+
     .faq-header {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .ask-button {
         margin-top: 10px;
     }
@@ -136,4 +142,3 @@ body {
         font-size: 0.85rem;
     }
 }
-
