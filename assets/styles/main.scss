@@ -1,12 +1,12 @@
-@import 'vars';
-@import 'header';
-@import 'maincarousel';
-@import 'carousel.scss';
-@import 'footer';
-@import 'dropdown';
-@import 'devices';
-
-
+@import '_vars';
+@import '_header';
+@import '_maincarousel';
+@import '_carousel';
+@import '_devices';
+@import '_questions';
+@import '_dropdown';
+@import '_footer';
+@import '_support';
 
 * {
     margin: 0;
@@ -18,12 +18,10 @@
 body {
     font-family: Arial, sans-serif;
     background-color: $background-color;
-    color: $text-color;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+
 }
 
 a {

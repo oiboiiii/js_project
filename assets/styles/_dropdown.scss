@@ -1,287 +1,6 @@
-<<<<<<< Updated upstream
-=======
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: black;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
-/* Навбар */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 0 auto;
-  max-width: 80%;
-  color: #fff;
-}
-
-.navbar-logo img {
-  height: 40px;
-}
-
-.navbar-links-container {
-  display: inline-block;
-  margin: 0 auto;
-  padding: 8px 30px 8px 30px;
-  opacity: 0px;
-  gap: 16px;
-}
-
-.navbar-links {
-  display: flex;
-  list-style-type: none;
-  gap: 15px;
-  padding: 8px 10px 8px 10px;
-}
-
-.navbar-links li {
-  margin: 0;
-}
-
-.navbar-links a {
-  color: #f2f1f5;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 8px 12px;
-  border-radius: 15px;
-  transition: background-color 0.3s, color 0.3s;
-  padding: 10px 8px 10px 8px;
-}
-
-.navbar-links a:hover {
-  background-color: #1F1F1F;
-  color: #fff;
-  border-radius: 10px;
-}
-
-.navbar-icons {
-  display: flex;
-  align-items: center;
-}
-
-.icon-button {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 15px;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.icon-button:hover {
-  color: #ddd;
-}
-
-/* Основной контент */
-.content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 400px 20px;
-  margin: 0 auto;
-  max-width: 80%;
-  min-height: 100vh;
-  background-image: url('./images/captain.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border: 0;
-}
-
-.content::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 40%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(59, 58, 58, 0));
-  z-index: 2;
-  border-radius: inherit;
-}
-
-.buttons {
-  display: flex;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: black;
-  border: none;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  gap: 14px;
-}
-
-.play-button {
-  background-color: red;
-}
-
-button:hover {
-  background-color: #1F1F1F;
-}
-
-.navigation-container {
-  bottom: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 100px 0px;
-}
-
-// .arrow {
-//   background-color: black;
-//   border: none;
-//   color: #fff;
-//   padding: 5px 15px;
-//   border-radius: 5px;
-//   cursor: pointer;
-//   font-size: 20px;
-//   transition: 0.3s;
-// }
-
-// .arrow:hover {
-//   background-color: #1F1F1F;
-// }
-
-.indicator {
-  display: flex;
-  gap: 5px;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  margin: 0 20px;
-
-}
-
-.line {
-  width: 30px;
-  height: 5px;
-  background-color: #fff;
-  transition: background-color 0.3s;
-  gap: 0px;
-  border-radius: 100px 0px 0px 0px;
-  opacity: 0px;
-}
-
-.line.active {
-  background-color: #d30808;
-}
-
-
-
-@media (max-width: 830px) {
-
-  /* Бургер-меню для мобильной версии */
-  .burger-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    cursor: pointer;
-    padding: 10px;
-  }
-
-  .burger-menu span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    transition: 0.3s;
-  }
-
-  .navbar-links-container,
-  .navbar-links,
-  .navbar-icons {
-    display: none;
-  }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    padding: 50px 20px;
-    min-height: 75vh;
-    background-image: url('./images/captain.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-
-  .content p {
-    display: none;
-  }
-
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    margin-top: 20px;
-    gap: 10px;
-    margin-top: 20px;
-  }
-
-  .buttons>button {
-    margin: 5px 0;
-  }
-
-  .buttons .icon-buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: center;
-  }
-
-  .play-button {
-    width: fit-content;
-  }
-
-  .content h1 {
-    width: 55vw;
-    font-size: 2.5em;
-    line-height: 1em;
-    width: 80%;
-
-  }
-
-  .content p {
-    width: 45vw;
-    font-size: 1em;
-    line-height: 1em;
-  }
-
-  .navigation-container {
-    display: none;
-  }
-
-}
-
-/* Каталог фильмов */
->>>>>>> Stashed changes
+/*каталог фильмов*/
 .movies-container {
-  background-color: #000;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -293,7 +12,7 @@ button:hover {
   gap: 15px;
 
   h1 {
-    color: white; 
+    color: white;
   }
 }
 
@@ -303,7 +22,7 @@ button:hover {
 }
 
 h1 {
-  color: #010101;
+  color: #ffffff;
 }
 
 .block {
@@ -339,12 +58,12 @@ h1 {
   }
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #000;
-  margin: 0;
-  padding: 0;
-}
+// body {
+//   font-family: Arial, sans-serif;
+//   background-color: #000;
+//   margin: 0;
+//   padding: 0;
+// }
 
 .movie-card {
   width: 800px;
@@ -378,71 +97,86 @@ body {
 /* Для смартфонов с экраном 375px и менее */
 @media (max-width: 375px) {
   .movies-container {
-    padding: 10px; /* Уменьшение отступов */
+    padding: 10px;
+    /* Уменьшение отступов */
   }
 
   .card {
-    flex: 0 0 calc(100% - 10px); /* Карточки занимают всю ширину экрана */
+    flex: 0 0 calc(100% - 10px);
+    /* Карточки занимают всю ширину экрана */
     width: calc(100% - 10px);
   }
 
   .movie-card {
-    width: 100%; /* Карточка фильма занимает всю ширину */
+    width: 100%;
+    /* Карточка фильма занимает всю ширину */
   }
 
   .movie-card .detailImage {
-    height: 200px; /* Уменьшение высоты изображения */
+    height: 200px;
+    /* Уменьшение высоты изображения */
   }
 
   .movie-card .movie-info {
-    padding: 15px; /* Уменьшение отступов */
+    padding: 15px;
+    /* Уменьшение отступов */
   }
 }
 
 /* Для телефонов/планшетов с экраном от 768px до 1279px */
 @media (min-width: 768px) and (max-width: 1279px) {
   .movies-container {
-    padding: 15px; /* Стандартные отступы для планшетов */
+    padding: 15px;
+    /* Стандартные отступы для планшетов */
   }
 
   .card {
-    flex: 0 0 calc(50% - 10px); /* Две карточки в ряд */
+    flex: 0 0 calc(50% - 10px);
+    /* Две карточки в ряд */
     width: calc(50% - 10px);
   }
 
   .movie-card {
-    width: 90%; /* Карточка фильма занимает 90% ширины */
+    width: 90%;
+    /* Карточка фильма занимает 90% ширины */
   }
 
   .movie-card .detailImage {
-    height: 300px; /* Увеличение высоты изображения для планшетов */
+    height: 300px;
+    /* Увеличение высоты изображения для планшетов */
   }
 
   .movie-card .movie-info {
-    padding: 20px; /* Стандартные отступы */
+    padding: 20px;
+    /* Стандартные отступы */
   }
 }
 
 /* Для десктопов с экраном 1280px и более */
 @media (min-width: 1280px) {
   .movies-container {
-    padding: 20px; /* Стандартные отступы для десктопов */
+    padding: 20px;
+    /* Стандартные отступы для десктопов */
   }
 
   .card {
-    flex: 0 0 calc(20% - 10px); /* Четыре карточки в ряд */
+    flex: 0 0 calc(20% - 10px);
+    /* Четыре карточки в ряд */
     width: calc(20% - 10px);
   }
 
   .movie-card {
-    width: 800px; /* Фиксированная ширина для карточки фильма */
+    width: 800px;
+    /* Фиксированная ширина для карточки фильма */
   }
 
   .movie-card .detailImage {
-    height: 400px; /* Высота изображения для десктопов */
+    height: 400px;
+    /* Высота изображения для десктопов */
   }
 
   .movie-card .movie-info {
-    padding: 20px; /* Стандартные отступы */
+    padding: 20px;
+    /* Стандартные отступы */
   }
 }
