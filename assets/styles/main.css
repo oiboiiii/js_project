@@ -876,6 +876,28 @@ h1 {
   .movie-card .movie-info {
     padding: 15px;
     /* Уменьшение отступов */
+    font-size: 14px;
+  }
+}
+/* Для телефонов с экраном от 375px до 765px */
+@media (min-width: 375px) and (max-width: 765px) {
+  .movies-container {
+    padding: 10px; /* Уменьшенные отступы для мобильных устройств */
+  }
+  .card {
+    flex: 0 0 calc(50% - 10px); /* Две карточки в ряд с отступом */
+    width: calc(50% - 10px); /* Ширина каждой карточки */
+    margin-bottom: 10px; /* Отступ снизу для карточек */
+  }
+  .movie-card {
+    width: 90%; /* Карточка фильма занимает 90% ширины родителя */
+  }
+  .movie-card .detailImage {
+    height: 350px; /* Уменьшение высоты изображения для экранов в этом диапазоне */
+  }
+  .movie-card .movie-info {
+    padding: 15px; /* Уменьшенные отступы для мобильных устройств */
+    font-size: 14px;
   }
 }
 /* Для телефонов/планшетов с экраном от 768px до 1279px */
@@ -894,7 +916,7 @@ h1 {
     /* Карточка фильма занимает 90% ширины */
   }
   .movie-card .detailImage {
-    height: 300px;
+    height: 500px;
     /* Увеличение высоты изображения для планшетов */
   }
   .movie-card .movie-info {
@@ -918,7 +940,7 @@ h1 {
     /* Фиксированная ширина для карточки фильма */
   }
   .movie-card .detailImage {
-    height: 400px;
+    height: 600px;
     /* Высота изображения для десктопов */
   }
   .movie-card .movie-info {
