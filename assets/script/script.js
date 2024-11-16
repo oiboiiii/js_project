@@ -31,6 +31,7 @@
 
 
 
+<<<<<<< Updated upstream
 //Каталог фильмов
 fetch('../json/info.json')
     .then(response => {
@@ -101,6 +102,15 @@ async function loadMediaData() {
 
 // Вызов функции для загрузки данных
 loadMediaData();
+=======
+function toggleMenu() {
+    const navbarMenu = document.querySelector('.navbar-links-container');
+    navbarMenu.classList.toggle('active');
+}
+toggleMenu();
+
+
+>>>>>>> Stashed changes
 
 
 
