@@ -5,24 +5,23 @@ const rightArrow = document.querySelector('.carousel-arrow.right');
 
 let currentIndex = 0;
 
-// Проверка на десктоп
+
 function isDesktop() {
-    return window.innerWidth >= 1200;
+    return window.innerWidth >= 1500;
 }
 
 function updateCarousel() {
     if (isDesktop()) {
-        // Убираем управление каруселью
+
         carousel.style.transform = 'none';
         leftArrow.style.display = 'none';
         rightArrow.style.display = 'none';
     } else {
         const cardWidth = cards[0].offsetWidth;
-        const gap = parseInt(getComputedStyle(carousel).gap) || 0; // Ширина промежутка
+        const gap = parseInt(getComputedStyle(carousel).gap) || 0;
         const offset = -(currentIndex * (cardWidth + gap));
         carousel.style.transform = `translateX(${offset}px)`;
 
-        // Управление видимостью стрелок
         leftArrow.style.display = currentIndex === 0 ? 'none' : 'block';
         rightArrow.style.display =
             currentIndex >= cards.length - Math.floor(carousel.offsetWidth / cardWidth)
@@ -45,6 +44,5 @@ rightArrow.addEventListener('click', () => {
     }
 });
 
-// Инициализация
 updateCarousel();
 window.addEventListener('resize', updateCarousel);

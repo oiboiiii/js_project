@@ -5,7 +5,7 @@
 
     h2 {
         font-size: 24px;
-        margin-top: 200px;
+        margin-top: 6rem;
         margin-bottom: 28px;
         color: #fff;
     }
@@ -65,13 +65,11 @@
 
 
 .category-section {
-    padding: 2rem;
 
-    .carousel-wrapper {
-        position: relative;
-        overflow: hidden; // Скрыть лишние части карусели только на мобильных
-        // width: 100%;
-    }
+    padding: 2rem;
+    overflow: hidden;
+
+
 
     .category-carousel {
         display: grid;
@@ -80,8 +78,8 @@
         transition: transform 0.3s ease;
         will-change: transform;
 
-        @media screen and (max-width: 1410px) {
-            display: flex; // Меняем на flex для карусели
+        @media screen and (max-width: 1450px) {
+            display: flex;
         }
     }
 
@@ -107,37 +105,38 @@
         }
     }
 
-    // Мобильные и планшеты
-    @media screen and (max-width: 1400px) {
+
+    @media screen and (max-width: 1450px) {
         .category-card {
-            flex: 0 0 calc(100% / 3); // 3 карточки на экране для планшетов
+            flex: 0 0 calc(100% / 3);
+            max-width: 285px;
         }
 
         @media screen and (max-width: 768px) {
             .category-card {
-                flex: 0 0 calc(100% / 2); // 2 карточки на экране
+                flex: 0 0 calc(100% / 2);
+                max-width: 285px;
+
             }
         }
 
         @media screen and (max-width: 480px) {
             .category-card {
-                flex: 0 0 100%; // 1 карточка на экране
+                flex: 0 0 100%;
+                max-width: 285px;
             }
         }
     }
 
-    // Отключение карусели на десктопах
     @media screen and (min-width: 1200px) {
-        .carousel-wrapper {
-            overflow: visible; // Скрытие лишних частей не нужно
-        }
 
         .carousel-arrow {
-            display: none; // Скрыть стрелки
+            display: none;
         }
 
         .category-card {
-            flex: 0 0 auto; // Оставляем карточки с фиксированной шириной
+
+            max-width: 285px;
         }
     }
 }
