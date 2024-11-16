@@ -23,10 +23,12 @@
         </button>
         <nav class="nav">
             <ul>
-                <li><a href="#">Домой</a></li>
-                <li><a href="#">Фильмы и Сериалы</a></li>
-                <li><a href="#">Поддержка</a></li>
-                <li><a href="#">Подписка</a></li>
+                <li><a href="/index.html">Домой</a></li>
+                <li><a href="/assets/pages/dropdown-catalog.html">Фильмы и Сериалы</a></li>
+                <li><a href="/assets/pages/supportPage.html">Поддержка</a></li>
+                <li><a
+                        href="http://127.0.0.1:5501/index.html#:~:text=%D0%9C%D1%8B%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D0%BC%20%D0%B2%D0%B0%D0%BC,%D0%B2%20%D0%BB%D1%8E%D0%B1%D0%BE%D0%BC%20%D0%BC%D0%B5%D1%81%D1%82%D0%B5.">Возможности</a>
+                </li>
             </ul>
         </nav>
         <div class="main-search">
@@ -48,7 +50,7 @@
         </section>
         <section class="cont">
             <div class="cont-p">
-                <p class="main-cont-p">Stream Vibe - это лучший способ потокового просмотра ваших любимых фильмов и шоу
+                <p class="main-cont-p">Stream Vibe - это лучший способ просмотра ваших любимых фильмов и шоу
                     по запросу,
                     в любое время и в любом месте. С помощью Stream Vibe вы можете наслаждаться самым разнообразным
                     контентом, включая самые свежие
@@ -74,25 +76,30 @@
 
 
                     <div class="category-carousel">
-                        <div class="category-card">
-                            <div class="category-images action"></div>
-                            <h3>Экшн</h3>
+                        <div class="category-card"><a href="/assets/pages/dropdown-catalog.html">
+                                <div class="category-images action"></div>
+                                <h3>Экшн</h3>
+                            </a>
                         </div>
-                        <div class="category-card">
-                            <div class="category-images adventure"></div>
-                            <h3>Приключения</h3>
+                        <div class="category-card"><a href="/assets/pages/dropdown-catalog.html">
+                                <div class="category-images adventure"></div>
+                                <h3>Приключения</h3>
+                            </a>
                         </div>
-                        <div class="category-card">
-                            <div class="category-images comedy"></div>
-                            <h3>Комедия</h3>
+                        <div class="category-card"><a href="/assets/pages/dropdown-catalog.html">
+                                <div class="category-images comedy"></div>
+                                <h3>Комедия</h3>
+                            </a>
                         </div>
-                        <div class="category-card">
-                            <div class="category-images drama"></div>
-                            <h3>Драма</h3>
+                        <div class="category-card"><a href="/assets/pages/dropdown-catalog.html">
+                                <div class="category-images drama"></div>
+                                <h3>Драма</h3>
+                            </a>
                         </div>
-                        <div class="category-card">
-                            <div class="category-images horror"></div>
-                            <h3>Ужасы</h3>
+                        <div class="category-card"><a href="/assets/pages/dropdown-catalog.html">
+                                <div class="category-images horror"></div>
+                                <h3>Ужасы</h3>
+                            </a>
                         </div>
                     </div>
                     <div class="main-carousel-buttons">
@@ -100,187 +107,188 @@
                         <button class="carousel-arrow right" onclick="scrollRight()">&#10095;</button>
                     </div>
         </section>
+
+
+
+        <!-- Questions  -->
+        <section class="faq-section">
+            <div class="faq-header">
+                <div class="faq-text">
+                    <h1>Часто задаваемые вопросы</h1>
+                    <p>Есть вопросы? У нас есть ответы! Проверь наш блок ЧЗВ,
+                        чтобы найти ответы на часто задаваемые вопросы про StreamVibe.</p>
+                </div>
+                <button class="ask-button">Спросить</button>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(1)">
+                        <span class="faq-number">01</span>
+                        <span class="faq-span">Что такое StreamVibe?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" id="answer1">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum animi dignissimos illum.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(2)">
+                        <span class="faq-number">02</span>
+                        <span class="faq-span">Сколько стоит StreamVibe?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" id="answer2">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet numquam magni cum.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(3)">
+                        <span class="faq-number">03</span>
+                        <span class="faq-span">Какой контент доступен на StreamVibe?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" id="answer3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque totam expedita minus!
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(4)">
+                        <span class="faq-number">04</span>
+                        <span class="faq-span">Как я могу просматривать StreamVibe?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" id="answer4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio at pariatur sint.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(5)">
+                        <span class="faq-number">05</span>
+                        <span class="faq-span">Как я могу подписаться на StreamVibe?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" id="answer5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eligendi blanditiis voluptas?
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(6)">
+                        <span class="faq-number">06</span>
+                        <span class="faq-span">Есть ли бесплатный просмотр на StreamVibe?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" id="answer6">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat delectus voluptatum error.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(7)">
+                        <span class="faq-number">07</span>
+                        <span class="faq-span">Как я могу связаться со службой поддержки StreamVibe?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" id="answer7">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt maiores eligendi laboriosam!
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(8)">
+                        <span class="faq-number">08</span>
+                        <span class="faq-span">Какие есть методы оплаты StreamVibe?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer" id="answer8">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusantium sit cum?
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEVICES -->
+        <section class="streaming">
+            <div class="streaming-tittle">
+                <h2 class="streaming-pretittle">Мы предоставляем вам возможность просмотра на различных
+                    устройствах.</h2>
+                <p class="streaming-p">С StreamVibe вы можете наслаждаться любимыми фильмами
+                    и телепередачами в любое время и в любом месте.</p>
+            </div>
+
+            <div class="streaming_container">
+                <div class="streaming__wrapper1">
+                    <div class="streaming__wrapper-smartphones">
+                        <div class="streaming__wrapper__title">
+                            <img src="../assets/images/smartphones.png" alt="smartphones">
+                            <span class="streaming__wrapper__title-text">Смартфоны</span>
+                        </div>
+                        <p class="streaming-p">StreamVibe оптимизирован для смартфонов Android и iOS. Загрузите наше
+                            приложение из Google
+                            Play Store или Apple App Store.</p>
+                    </div>
+
+                    <div class="streaming__wrapper-tablet">
+                        <div class="streaming__wrapper__title">
+                            <img src="../assets/images/tablet.png" alt="tablet">
+                            <span class="streaming__wrapper__title-text">Планшет</span>
+                        </div>
+                        <p class="streaming-p">StreamVibe оптимизирован для смартфонов Android и iOS. Загрузите наше
+                            приложение из Google
+                            Play Store или Apple App Store.</p>
+                    </div>
+
+                    <div class="streaming__wrapper-tv">
+                        <div class="streaming__wrapper__title">
+                            <img src="../assets/images/tv.png" alt="tv">
+                            <span class="streaming__wrapper__title-text">Смарт ТВ</span>
+                        </div>
+                        <p class="streaming-p">StreamVibe оптимизирован для смартфонов Android и iOS. Загрузите наше
+                            приложение из Google
+                            Play Store или Apple App Store.</p>
+                    </div>
+                </div>
+
+                <div class="streaming__wrapper2">
+                    <div class="streaming__wrapper-laptops">
+                        <div class="streaming__wrapper__title">
+                            <img src="../assets/images/laptops.png" alt="laptops">
+                            <span class="streaming__wrapper__title-text">Ноутбуки</span>
+                        </div>
+                        <p class="streaming-p">StreamVibe оптимизирован для смартфонов Android и iOS.Загрузите наше
+                            приложение из Google
+                            Play Store или Apple App Store.</p>
+                    </div>
+
+                    <div class="streaming__wrapper-consoles">
+                        <div class="streaming__wrapper__title">
+                            <img src="/assets/images/gamings.png" alt="Gaming Consoles">
+                            <span class="streaming__wrapper__title-text">Игровые консоли</span>
+                        </div>
+                        <p class="streaming-p">StreamVibe оптимизирован для смартфонов Android и iOS. Загрузите наше
+                            приложение из Google
+                            Play Store или Apple App Store.</p>
+                    </div>
+
+                    <div class="streaming__wrapper-vr">
+                        <div class="streaming__wrapper__title">
+                            <img src="/assets/images/vr.png" alt="VR Headsets">
+                            <span class="streaming__wrapper__title-text">VR-гарнитуры</span>
+                        </div>
+                        <p class="streaming-p">StreamVibe оптимизирован для смартфонов Android и iOS. Загрузите наше
+                            приложение из Google
+                            Play Store или Apple App Store.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
-
-
-    <!-- Questions  -->
-    <section class="faq-section">
-        <div class="faq-header">
-            <div class="faq-text">
-                <h1>Часто задаваемые вопросы</h1>
-                <p>Есть вопросы? У нас есть ответы! Проверь наш блок ЧЗВ,
-                    чтобы найти ответы на часто задаваемые вопросы про StreamVibe.</p>
-            </div>
-            <button class="ask-button">Спросить</button>
-        </div>
-
-        <div class="faq-container">
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleAnswer(1)">
-                    <span class="faq-number">01</span>
-                    <span class="faq-span">Что такое StreamVibe?</span>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer" id="answer1">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum animi dignissimos illum.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleAnswer(2)">
-                    <span class="faq-number">02</span>
-                    <span class="faq-span">Сколько стоит StreamVibe?</span>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer" id="answer2">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet numquam magni cum.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleAnswer(3)">
-                    <span class="faq-number">03</span>
-                    <span class="faq-span">Какой контент доступен на StreamVibe?</span>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer" id="answer3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque totam expedita minus!
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleAnswer(4)">
-                    <span class="faq-number">04</span>
-                    <span class="faq-span">Как я могу просматривать StreamVibe?</span>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer" id="answer4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio at pariatur sint.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleAnswer(5)">
-                    <span class="faq-number">05</span>
-                    <span class="faq-span">Как я могу подписаться на StreamVibe?</span>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer" id="answer5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eligendi blanditiis voluptas?
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleAnswer(6)">
-                    <span class="faq-number">06</span>
-                    <span class="faq-span">Есть ли бесплатный просмотр на StreamVibe?</span>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer" id="answer6">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat delectus voluptatum error.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleAnswer(7)">
-                    <span class="faq-number">07</span>
-                    <span class="faq-span">Как я могу связаться со службой поддержки StreamVibe?</span>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer" id="answer7">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt maiores eligendi laboriosam!
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleAnswer(8)">
-                    <span class="faq-number">08</span>
-                    <span class="faq-span">Какие есть методы оплаты StreamVibe?</span>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer" id="answer8">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusantium sit cum?
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- DEVICES -->
-    <section class="streaming">
-        <div class="streaming-tittle">
-            <h2 class="streaming-pretittle">Мы предоставляем вам возможность потоковой передачи на различных
-                устройствах.</h2>
-            <p class="streaming-p">С StreamVibe вы можете наслаждаться любимыми фильмами
-                и телепередачами в любое время и в любом месте.</p>
-        </div>
-
-        <div class="streaming_container">
-            <div class="streaming__wrapper1">
-                <div class="streaming__wrapper-smartphones">
-                    <div class="streaming__wrapper__title">
-                        <img src="../assets/images/smartphones.png" alt="smartphones">
-                        <span class="streaming__wrapper__title-text">Смартфоны</span>
-                    </div>
-                    <p class="streaming-p">StreamVibe оптимизирован для смартфонов Android и iOS. Загрузите наше
-                        приложение из Google
-                        Play Store или Apple App Store.</p>
-                </div>
-
-                <div class="streaming__wrapper-tablet">
-                    <div class="streaming__wrapper__title">
-                        <img src="../assets/images/tablet.png" alt="tablet">
-                        <span class="streaming__wrapper__title-text">Планшет</span>
-                    </div>
-                    <p class="streaming-p">StreamVibe оптимизирован для смартфонов Android и iOS. Загрузите наше
-                        приложение из Google
-                        Play Store или Apple App Store.</p>
-                </div>
-
-                <div class="streaming__wrapper-tv">
-                    <div class="streaming__wrapper__title">
-                        <img src="../assets/images/tv.png" alt="tv">
-                        <span class="streaming__wrapper__title-text">Смарт ТВ</span>
-                    </div>
-                    <p class="streaming-p">StreamVibe оптимизирован для смартфонов Android и iOS. Загрузите наше
-                        приложение из Google
-                        Play Store или Apple App Store.</p>
-                </div>
-            </div>
-
-            <div class="streaming__wrapper2">
-                <div class="streaming__wrapper-laptops">
-                    <div class="streaming__wrapper__title">
-                        <img src="../assets/images/laptops.png" alt="laptops">
-                        <span class="streaming__wrapper__title-text">Ноутбуки</span>
-                    </div>
-                    <p class="streaming-p">StreamVibe оптимизирован для смартфонов Android и iOS.Загрузите наше
-                        приложение из Google
-                        Play Store или Apple App Store.</p>
-                </div>
-
-                <div class="streaming__wrapper-consoles">
-                    <div class="streaming__wrapper__title">
-                        <img src="/assets/images/gamings.png" alt="Gaming Consoles">
-                        <span class="streaming__wrapper__title-text">Игровые консоли</span>
-                    </div>
-                    <p class="streaming-p">StreamVibe оптимизирован для смартфонов Android и iOS. Загрузите наше
-                        приложение из Google
-                        Play Store или Apple App Store.</p>
-                </div>
-
-                <div class="streaming__wrapper-vr">
-                    <div class="streaming__wrapper__title">
-                        <img src="/assets/images/vr.png" alt="VR Headsets">
-                        <span class="streaming__wrapper__title-text">VR-гарнитуры</span>
-                    </div>
-                    <p class="streaming-p">StreamVibe оптимизирован для смартфонов Android и iOS. Загрузите наше
-                        приложение из Google
-                        Play Store или Apple App Store.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
     <!-- FOOTER -->
 
     <footer class="footer">
@@ -377,7 +385,7 @@
     </footer>
 
     <script src="./assets/script/main_page_script.js"></script>
-    <script src="./assets/script/burger_main_page.js"></script>
+    <script src="./assets/script/burger_header.js"></script>
     <script src="./assets/script/mainpage_carousel_script.js"></script>
 </body>
 

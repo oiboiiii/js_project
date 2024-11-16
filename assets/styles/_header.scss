@@ -166,8 +166,9 @@
             background: #1A1A1A;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             flex-direction: column;
+            border-radius: 8px;
             gap: 10px;
-            padding: 10px;
+            padding: 2rem;
 
             ul {
                 flex-direction: column;

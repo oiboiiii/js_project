@@ -11,27 +11,35 @@
 
 <body>
     <!-- Карусель -->
-    <div class="navbar">
-        <div class="navbar-logo">
-            <img src="../images/Logo1 copy.png" alt="Логотип" />
+    <header class="header">
+        <div class="logo">
+            <img src="../images/logo.png" alt="StreamVibe Logo">
         </div>
-        <div class="burger-menu" onclick="toggleMenu()">
+        <button class="main-page-burger-menu" aria-label="Toggle menu">
             <span></span>
             <span></span>
             <span></span>
-        </div>
-        <div class="navbar-links-container">
-            <ul class="navbar-links">
-                <li><a href="#">Домой</a></li>
-                <li><a href="#">Кино</a></li>
-                <li><a href="#">Поддержка</a></li>
-                <li><a href="#">Описание</a></li>
+        </button>
+        <nav class="nav">
+            <ul>
+                <li><a href="/index.html">Домой</a></li>
+                <li><a href="/assets/pages/dropdown-catalog.html">Фильмы и Сериалы</a></li>
+                <li><a href="/assets/pages/supportPage.html">Поддержка</a></li>
+                <li><a
+                        href="http://127.0.0.1:5501/index.html#:~:text=%D0%9C%D1%8B%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D0%B5%D0%BC%20%D0%B2%D0%B0%D0%BC,%D0%B2%20%D0%BB%D1%8E%D0%B1%D0%BE%D0%BC%20%D0%BC%D0%B5%D1%81%D1%82%D0%B5.">Возможности</a>
+                </li>
             </ul>
+        </nav>
+        <div class="main-search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001a1.007 1.007 0 0 0-.196.196l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.196-.196zm-5.742 1a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+            </svg>
+            <input class="" type="text" placeholder="Поиск...">
         </div>
-        <div class="navbar-icons">
-            <button class="icon-button"><i class="fas fa-search"></i></button>
-            <button class="icon-button"><i class="fas fa-bell"></i></button>
-        </div>
+    </header>
+
     </div>
     <div class="carousel_content">
         <h1>Мстители: Финал</h1>
@@ -163,7 +171,8 @@
     </footer>
 
     <script src="../script/script.js"></script>
-
+    <script src="../script/burger_header.js"></script>
     <script src="../script/dropdown_script.js"></script>
 </body>
+
 </html>
