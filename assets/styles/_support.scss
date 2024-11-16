@@ -26,11 +26,12 @@
     line-height: 150%;
     color: #999999;
 }
+
 .container {
     border: 1px solid #141414;
     border-radius: 12px;
-    padding: 50px ;
-    background:#0F0F0F;
+    padding: 50px;
+    background: #0F0F0F;
     flex-wrap: wrap;
     display: flex;
 }
@@ -60,7 +61,7 @@ label {
     padding: 5px 5px;
 }
 
-.number{
+.number {
     display: flex;
     flex-direction: column;
     padding: 5px 5px;
@@ -79,7 +80,7 @@ label {
     justify-content: space-around;
 }
 
-button {
+#submit-button {
     background-color: #e50000;
     color: #fff;
     border-radius: 8px;
@@ -147,35 +148,35 @@ textarea {
 
 // Адаптация
 
-@media(426px <= width <= 1281px){
-    .support{
+@media(426px <=width <=1281px) {
+    .support {
         display: flex;
         justify-content: space-around;
         flex-direction: row;
     }
 
-    .support__container{
+    .support__container {
         width: 400px;
     }
 
-    .support__container-image{
+    .support__container-image {
         width: 100%;
     }
 
-    .container{
+    .container {
         width: auto;
     }
 }
 
-@media(320px <= width <= 425px) {
-    .support__container-image{
+@media(320px <=width <=425px) {
+    .support__container-image {
         width: 100%;
     }
 
-    .support__container{
+    .support__container {
         padding: 15px;
     }
-    
+
     .box1 {
         display: flex;
         flex-direction: column;

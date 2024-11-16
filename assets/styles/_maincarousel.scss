@@ -17,27 +17,12 @@
     }
 }
 
-.carousel-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-    justify-content: center;
-}
-
-.category-carousel {
-    display: flex;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    width: $carousel-width;
-    padding: 10px;
-}
-
 .category-card {
     background-color: $card-background-color;
     border-radius: 10px;
     margin: 0 10px;
     padding: 20px;
-    width: $card-width;
+    max-width: 285px;
     color: $text-color;
     transition: transform $transition-duration ease;
 
@@ -49,51 +34,110 @@
         margin-top: 10px;
         font-size: 18px;
     }
+}
 
-    .category-images {
-        height: 140px;
-        border-radius: 8px;
-        background-size: cover;
-        background-position: center;
+.category-images {
+    height: 140px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
 
-        &.action {
-            background-image: url('/assets/images/action_pic.png');
-        }
+    &.action {
+        background-image: url('/assets/images/action_pic.png');
+    }
 
-        &.adventure {
-            background-image: url('/assets/images/adventure_pic.png');
-        }
+    &.adventure {
+        background-image: url('/assets/images/adventure_pic.png');
+    }
 
-        &.comedy {
-            background-image: url('/assets/images/comedy_pic.png');
-        }
+    &.comedy {
+        background-image: url('/assets/images/comedy_pic.png');
+    }
 
-        &.drama {
-            background-image: url('/assets/images/drama_pic.png');
-        }
+    &.drama {
+        background-image: url('/assets/images/drama_pic.png');
+    }
 
-        &.horror {
-            background-image: url('/assets/images/horror_pic.png');
-        }
+    &.horror {
+        background-image: url('/assets/images/horror_pic.png');
     }
 }
 
-// .carousel-arrow {
-//     background: none;
-//     border: none;
-//     color: $text-color;
-//     font-size: 24px;
-//     cursor: pointer;
-//     position: absolute;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     padding: 5px;
 
-//     &.left {
-//         left: 10px;
-//     }
+.category-section {
+    padding: 2rem;
 
-//     &.right {
-//         right: 10px;
-//     }
-// }
+    .carousel-wrapper {
+        position: relative;
+        overflow: hidden; // Скрыть лишние части карусели только на мобильных
+        // width: 100%;
+    }
+
+    .category-carousel {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        transition: transform 0.3s ease;
+        will-change: transform;
+
+        @media screen and (max-width: 1410px) {
+            display: flex; // Меняем на flex для карусели
+        }
+    }
+
+
+    .carousel-arrow {
+        position: absolute;
+
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+        z-index: 10;
+
+        &.left {
+            left: 10px;
+        }
+
+        &.right {
+            right: 10px;
+        }
+    }
+
+    // Мобильные и планшеты
+    @media screen and (max-width: 1400px) {
+        .category-card {
+            flex: 0 0 calc(100% / 3); // 3 карточки на экране для планшетов
+        }
+
+        @media screen and (max-width: 768px) {
+            .category-card {
+                flex: 0 0 calc(100% / 2); // 2 карточки на экране
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .category-card {
+                flex: 0 0 100%; // 1 карточка на экране
+            }
+        }
+    }
+
+    // Отключение карусели на десктопах
+    @media screen and (min-width: 1200px) {
+        .carousel-wrapper {
+            overflow: visible; // Скрытие лишних частей не нужно
+        }
+
+        .carousel-arrow {
+            display: none; // Скрыть стрелки
+        }
+
+        .category-card {
+            flex: 0 0 auto; // Оставляем карточки с фиксированной шириной
+        }
+    }
+}
