@@ -70,9 +70,10 @@
     .hero-h {
         position: relative;
         z-index: 2;
+        text-align: center;
 
         h1 {
-            font-size: 58px;
+            font-size: clamp(28px, 5vw, 58px);
             font-weight: bold;
         }
     }
@@ -99,18 +100,96 @@
     .btn {
         background-color: #E50914;
         color: #fff;
-        padding: 12px 25px;
+        padding: 1rem 1.5rem;
         border-radius: 8px;
-        font-size: 16px;
+        font-size: clamp(14px, 2vw, 16px);
         text-decoration: none;
         display: inline-flex;
         align-items: center;
 
 
         svg {
-            width: 28px;
-            height: 28px;
+            max-width: 2rem;
+            max-height: 2rem;
             fill: currentColor;
+            margin-right: 5px;
         }
+    }
+}
+
+//бургер меню для адаптива
+.header {
+    .main-page-burger-menu {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        padding: 7px;
+
+        span {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            border-radius: 2px;
+        }
+    }
+
+    .nav {
+        ul {
+            display: flex;
+            gap: 20px;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+
+
+        .main-search {
+            display: none;
+        }
+
+        .main-page-burger-menu {
+            display: flex;
+        }
+
+        .nav {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 3rem;
+            color: lightgrey;
+            background: #1A1A1A;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+
+            ul {
+                flex-direction: column;
+                gap: 2rem;
+            }
+        }
+
+        .nav.active {
+            display: flex;
+        }
+    }
+
+
+}
+
+.cont {
+
+    @media screen and (max-width: 1000px) {
+        .main-cont-p {
+            display: none;
+        }
+
+
     }
 }

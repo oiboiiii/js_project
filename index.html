@@ -16,6 +16,11 @@
         <div class="logo">
             <img src="./assets/images/logo.png" alt="StreamVibe Logo">
         </div>
+        <button class="main-page-burger-menu" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav class="nav">
             <ul>
                 <li><a href="#">Главная</a></li>
@@ -43,7 +48,8 @@
         </section>
         <section class="cont">
             <div class="cont-p">
-                <p>Stream Vibe - это лучший способ потокового просмотра ваших любимых фильмов и шоу по запросу,
+                <p class="main-cont-p">Stream Vibe - это лучший способ потокового просмотра ваших любимых фильмов и шоу
+                    по запросу,
                     в любое время и в любом месте. С помощью Stream Vibe вы можете наслаждаться самым разнообразным
                     контентом, включая самые свежие
                     блокбастеры, классические фильмы, популярные телешоу и многое другое. Вы также можете создавать свои
@@ -64,7 +70,8 @@
                     документальный фильм, чтобы
                     узнать что-то новое</p>
                 <div class="carousel-container">
-                    <!-- <button class="carousel-arrow left" onclick="scrollLeft()">&#10094;</button> -->
+
+
 
                     <div class="category-carousel">
                         <div class="category-card">
@@ -88,8 +95,10 @@
                             <h3>Ужасы</h3>
                         </div>
                     </div>
-
-                    <!-- <button class="carousel-arrow right" onclick="scrollRight()">&#10095;</button> -->
+                    <div class="main-carousel-buttons">
+                        <button class="carousel-arrow left" onclick="scrollLeft()">&#10094;</button>
+                        <button class="carousel-arrow right" onclick="scrollRight()">&#10095;</button>
+                    </div>
         </section>
     </main>
 
@@ -368,6 +377,8 @@
     </footer>
 
     <script src="./assets/script/main_page_script.js"></script>
+    <script src="./assets/script/burger_main_page.js"></script>
+    <script src="./assets/script/mainpage_carousel_script.js"></script>
 </body>
 
 </html>
