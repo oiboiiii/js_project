@@ -4,7 +4,6 @@
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  padding: 20px 50px;
   position: absolute;
   top: 0;
   left: 0;
@@ -52,7 +51,7 @@
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 500px 100px 0px 100px;
+  padding: 28% 6rem 0 6rem;
   position: relative;
   overflow: hidden;
 }
@@ -98,7 +97,7 @@
 }
 
 .category-section {
-  max-width: 70%;
+  max-width: 80%;
   margin: auto;
 }
 .category-section h2 {
@@ -166,24 +165,6 @@
   background-image: url("/assets/images/horror_pic.png");
 }
 
-.carousel-arrow {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 24px;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 5px;
-}
-.carousel-arrow.left {
-  left: 10px;
-}
-.carousel-arrow.right {
-  right: 10px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -204,7 +185,6 @@ body {
   justify-content: space-between;
   margin: 0 auto;
   max-width: 80%;
-  background-color: #000;
   color: #fff;
 }
 
@@ -453,8 +433,9 @@ button:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 1440px;
+  max-width: 90%;
   margin: 0 auto;
+  align-content: center;
 }
 
 .streaming__wrapper1 {
@@ -527,7 +508,7 @@ button:hover {
 }
 
 .streaming-tittle {
-  padding: 20px;
+  padding: 10% 10% 0 10%;
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -563,16 +544,15 @@ body {
 }
 
 .faq-section {
-  max-width: 900px;
+  max-width: 80%;
   margin: 0 auto;
-  padding: 20px;
 }
 
 .faq-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin: 10% 0 2% 0;
 }
 
 .faq-text {
@@ -704,10 +684,9 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 0 auto;
   max-width: 80%;
-  background-color: #000;
   color: #fff;
 }
 
@@ -1087,6 +1066,10 @@ h1 {
   }
 }
 /* FOOTER */
+footer {
+  padding: 0 5% 0 5%;
+}
+
 .footer-card {
   display: flex;
   flex-direction: row;
