@@ -245,7 +245,6 @@ body {
   color: #ddd;
 }
 
-/* Основной контент */
 .carousel_content {
   position: relative;
   display: flex;
@@ -354,6 +353,9 @@ button:hover {
   background-color: #d30808;
 }
 
+
+/* Адаптивность */
+
 @media (max-width: 830px) {
   /* Бургер-меню для мобильной версии */
   .burger-menu {
@@ -429,6 +431,164 @@ button:hover {
     display: none;
   }
 }
+
+/* Каталог фильмов */
+.movies-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 15px;
+}
+.movies-container h1 {
+  color: white;
+}
+
+.main__logo {
+  width: 100%;
+  border-radius: 5px;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+.block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  flex: 0 0 calc(20% - 10px);
+  border: 1px solid #262626;
+  border-radius: 5px;
+  padding: 10px;
+  width: calc(20% - 10px);
+  text-align: center;
+  background-color: #262626;
+  transition: transform 0.2s;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.movie-card {
+  width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+.movie-card .detailImage {
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+}
+.movie-card .movie-info {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 0px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.movie-card h3 {
+  margin: 0;
+}
+.movie-card p {
+  margin: 5px 0;
+}
+
+/* Адаптивные стили */
+/* Для смартфонов с экраном 375px и менее */
+@media (max-width: 375px) {
+  .movies-container {
+    padding: 10px;
+    /* Уменьшение отступов */
+  }
+  .card {
+    flex: 0 0 calc(100% - 10px);
+    /* Карточки занимают всю ширину экрана */
+    width: calc(100% - 10px);
+  }
+  .movie-card {
+    width: 100%;
+    /* Карточка фильма занимает всю ширину */
+  }
+  .movie-card .detailImage {
+    height: 200px;
+    /* Уменьшение высоты изображения */
+  }
+  .movie-card .movie-info {
+    padding: 15px;
+    /* Уменьшение отступов */
+  }
+}
+/* Для телефонов/планшетов с экраном от 768px до 1279px */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .movies-container {
+    padding: 15px;
+    /* Стандартные отступы для планшетов */
+  }
+  .card {
+    flex: 0 0 calc(50% - 10px);
+    /* Две карточки в ряд */
+    width: calc(50% - 10px);
+  }
+  .movie-card {
+    width: 90%;
+    /* Карточка фильма занимает 90% ширины */
+  }
+  .movie-card .detailImage {
+    height: 300px;
+    /* Увеличение высоты изображения для планшетов */
+  }
+  .movie-card .movie-info {
+    padding: 20px;
+    /* Стандартные отступы */
+  }
+}
+/* Для десктопов с экраном 1280px и более */
+@media (min-width: 1280px) {
+  .movies-container {
+    padding: 20px;
+    /* Стандартные отступы для десктопов */
+  }
+  .card {
+    flex: 0 0 calc(20% - 10px);
+    /* Четыре карточки в ряд */
+    width: calc(20% - 10px);
+  }
+  .movie-card {
+    width: 800px;
+    /* Фиксированная ширина для карточки фильма */
+  }
+  .movie-card .detailImage {
+    height: 400px;
+    /* Высота изображения для десктопов */
+  }
+  .movie-card .movie-info {
+    padding: 20px;
+    /* Стандартные отступы */
+  }
+}
+
+/* FOOTER */
+.footer-card {
+
 .streaming_container {
   display: flex;
   flex-direction: column;
