@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-
+<!-- SUPPORT -->
     <section class="support">
         <div class="support__container">
             <div>
@@ -16,10 +16,186 @@
                 <img class="support__container-image" src="/assets/images/subcontainer.png" alt="">
             </div>
         </div>
-
+        <div class="container">
+            <form
+              id="registration-form"
+              class="registration-form"
+              autocomplete="off"
+            >
+              <div class="box1">
+                <div class="name">
+                  <label for="name">Имя</label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Введите имя"
+                    autocomplete="given-name"
+                  />
+                  <span class="error" id="name-error"></span><br />
+                </div>
+                <div class="surname">
+                  <label for="surname">Фамилия</label>
+                  <input
+                    type="text"
+                    id="surname"
+                    placeholder="Введите фамилию"
+                    autocomplete="family-name"
+                  />
+                  <span class="error" id="surname-error"></span><br />
+                </div>
+              </div>
+              <div class="box2">
+                <div class="email">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Введите email"
+                    autocomplete="email"
+                  /> 
+                  <span class="error" id="email-error"></span><br />
+                </div>
+    
+                <div class="number">
+                  <label for="number">Номер</label>
+                  <input
+                    type="number"
+                    id="number"
+                    placeholder="Введите номер"
+                    autocomplete="tel"
+                  /> 
+                  <span class="error" id="number-error"></span><br />
+                </div>
+              </div>
+              <div>
+                <div class="message">
+                  <label for="message">Сообщение</label>
+                  <textarea
+                    id="message"
+                    rows="4"
+                    placeholder="Введите ваше сообщение"
+                    autocomplete="off"
+                  ></textarea>
+                  <span class="error" id="message-error"></span><br />
+                </div>
+                <div class="box">
+                  <div class="checkbox">
+                    <label class="support__container-text">
+                      <input type="checkbox" id="consent" />Я согласен с Условиями
+                      использования и Политикой конфиденциальности</label
+                    ><br>
+                    <span class="error" id="consent-error"></span><br />
+                  </div>
+    
+                  <button type="submit" id="submit-button">Отправить</button>
+                </div>
+              </div>
+            </form>
     </div>
     </section>
     
+    <!-- Questions  -->
+    <section class="faq-section">
+        <div class="faq-header">
+            <div class="faq-text">
+                <h1>Часто задаваемые вопросы</h1>
+                <p>Есть вопросы? У нас есть ответы! Проверь наш блок ЧЗВ,
+                    чтобы найти ответы на часто задаваемые вопросы про StreamVibe.</p>
+            </div>
+            <button class="ask-button">Спросить</button>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(1)">
+                    <span class="faq-number">01</span>
+                    <span class="faq-span">Что такое StreamVibe?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" id="answer1">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum animi dignissimos illum.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(2)">
+                    <span class="faq-number">02</span>
+                    <span class="faq-span">Сколько стоит StreamVibe?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" id="answer2">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet numquam magni cum.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(3)">
+                    <span class="faq-number">03</span>
+                    <span class="faq-span">Какой контент доступен на StreamVibe?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" id="answer3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque totam expedita minus!
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(4)">
+                    <span class="faq-number">04</span>
+                    <span class="faq-span">Как я могу просматривать StreamVibe?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" id="answer4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio at pariatur sint.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(5)">
+                    <span class="faq-number">05</span>
+                    <span class="faq-span">Как я могу подписаться на StreamVibe?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" id="answer5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eligendi blanditiis voluptas?
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(6)">
+                    <span class="faq-number">06</span>
+                    <span class="faq-span">Есть ли бесплатный просмотр на StreamVibe?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" id="answer6">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat delectus voluptatum error.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(7)">
+                    <span class="faq-number">07</span>
+                    <span class="faq-span">Как я могу связаться со службой поддержки StreamVibe?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" id="answer7">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt maiores eligendi laboriosam!
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(8)">
+                    <span class="faq-number">08</span>
+                    <span class="faq-span">Какие есть методы оплаты StreamVibe?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer" id="answer8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusantium sit cum?
+                </div>
+            </div>
+        </div>
+    </section>
+
         <!-- FOOTER -->
 
         <footer class="footer">
@@ -114,5 +290,7 @@
                 </div>
             </div>
             </footer>
+
+            <script src="/assets/script/support.js"></script>
 </body>
 </html>
