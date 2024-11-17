@@ -122,7 +122,7 @@ body {
 }
 
 button {
-    // padding: 10px 20px;
+    padding: 10px 20px;
     background-color: black;
     border: none;
     color: #fff;
@@ -188,9 +188,7 @@ button:hover {
     background-color: #d30808;
 }
 
-@media (max-width: 830px) {
-
-    /* Бургер-меню для мобильной версии */
+@media (max-width: 1000px){
     .burger-menu {
         display: flex;
         flex-direction: column;
@@ -219,7 +217,7 @@ button:hover {
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin: 0 auto;
+        margin:0 auto;
         padding: 50px 20px;
         min-height: 75vh;
         background-image: url('../images/captain.png');
@@ -232,7 +230,7 @@ button:hover {
         display: none;
     }
 
-    .buttons {
+    .carousel-buttons{
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -242,37 +240,22 @@ button:hover {
         margin-top: 20px;
     }
 
-    .buttons>button {
+    .play-button {
+            width: fit-content;
+    }
+
+    .carousel-buttons>button {
         margin: 5px 0;
     }
 
-    .buttons .icon-buttons {
+    .carousel-buttons .icon-buttons {
         display: flex;
         flex-direction: row;
         gap: 1rem;
         justify-content: center;
     }
-
-    .play-button {
-        width: fit-content;
-    }
-
-    .content h1 {
-        width: 55vw;
-        font-size: 2.5em;
-        line-height: 1em;
-        width: 80%;
-
-    }
-
-    .content p {
-        width: 45vw;
-        font-size: 1em;
-        line-height: 1em;
-    }
-
-    .navigation-container {
-        display: none;
-    }
-
+    
+    // .carousel-navigation-container {
+    //     display: none;
+    // }
 }
