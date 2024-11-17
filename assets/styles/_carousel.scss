@@ -28,7 +28,6 @@ body {
     display: inline-block;
     margin: 0 auto;
     padding: 8px 30px 8px 30px;
-    opacity: 0px;
     gap: 16px;
 }
 
@@ -181,14 +180,13 @@ button:hover {
     transition: background-color 0.3s;
     gap: 0px;
     border-radius: 100px 0px 0px 0px;
-    opacity: 0px;
 }
 
 .line.active {
     background-color: #d30808;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
     .burger-menu {
         display: flex;
         flex-direction: column;
@@ -217,7 +215,7 @@ button:hover {
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin:0 auto;
+        margin: 0 auto;
         padding: 50px 20px;
         min-height: 75vh;
         background-image: url('../images/captain.png');
@@ -230,7 +228,7 @@ button:hover {
         display: none;
     }
 
-    .carousel-buttons{
+    .carousel-buttons {
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -241,7 +239,7 @@ button:hover {
     }
 
     .play-button {
-            width: fit-content;
+        width: fit-content;
     }
 
     .carousel-buttons>button {
@@ -254,7 +252,7 @@ button:hover {
         gap: 1rem;
         justify-content: center;
     }
-    
+
     // .carousel-navigation-container {
     //     display: none;
     // }

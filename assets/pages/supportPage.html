@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link type="image/x-icon" href="../images/favicon.svg" rel="shortcut icon">
     <link rel="stylesheet" href="../styles/main.css">
+    <title>Поддержка StreamVibe</title>
 </head>
+
 <body>
     <header class="header">
         <div class="logo">
@@ -37,93 +40,65 @@
             <input class="" type="text" placeholder="Поиск...">
         </div>
     </header>
-<!-- SUPPORT -->
+    <!-- SUPPORT -->
     <section class="support">
         <div class="support__container">
             <div>
-            <h2 class="support__container-pretittle">Добро пожаловать на нашу страницу поддержки!</h2>
-            <p class="support__container-text">Мы здесь, чтобы помочь вам решить любые проблемы, которые могут возникнуть у вас с нашим продуктом.</p>
+                <h2 class="support__container-pretittle">Добро пожаловать на нашу страницу поддержки!</h2>
+                <p class="support__container-text">Мы здесь, чтобы помочь вам решить любые проблемы, которые могут
+                    возникнуть у вас с нашим продуктом.</p>
                 <img class="support__container-image" src="/assets/images/subcontainer.png" alt="">
             </div>
         </div>
         <div class="container">
-            <form
-              id="registration-form"
-              class="registration-form"
-              autocomplete="off"
-            >
-              <div class="box1">
-                <div class="name">
-                  <label for="name">Имя</label>
-                  <input
-                    type="text"
-                    id="name"
-                    placeholder="Введите имя"
-                    autocomplete="given-name"
-                  />
-                  <span class="error" id="name-error"></span><br />
+            <form id="registration-form" class="registration-form" autocomplete="off">
+                <div class="box1">
+                    <div class="name">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" placeholder="Введите имя" autocomplete="given-name" />
+                        <span class="error" id="name-error"></span><br />
+                    </div>
+                    <div class="surname">
+                        <label for="surname">Фамилия</label>
+                        <input type="text" id="surname" placeholder="Введите фамилию" autocomplete="family-name" />
+                        <span class="error" id="surname-error"></span><br />
+                    </div>
                 </div>
-                <div class="surname">
-                  <label for="surname">Фамилия</label>
-                  <input
-                    type="text"
-                    id="surname"
-                    placeholder="Введите фамилию"
-                    autocomplete="family-name"
-                  />
-                  <span class="error" id="surname-error"></span><br />
+                <div class="box2">
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Введите email" autocomplete="email" />
+                        <span class="error" id="email-error"></span><br />
+                    </div>
+
+                    <div class="number">
+                        <label for="number">Номер</label>
+                        <input type="number" id="number" placeholder="Введите номер" />
+                        <span class="error" id="number-error"></span><br />
+                    </div>
                 </div>
-              </div>
-              <div class="box2">
-                <div class="email">
-                  <label for="email">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    placeholder="Введите email"
-                    autocomplete="email"
-                  /> 
-                  <span class="error" id="email-error"></span><br />
+                <div>
+                    <div class="message">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" rows="4" placeholder="Введите ваше сообщение"
+                            autocomplete="off"></textarea>
+                        <span class="error" id="message-error"></span><br />
+                    </div>
+                    <div class="box">
+                        <div class="checkbox">
+                            <label class="support__container-text">
+                                <input type="checkbox" id="consent" />Я согласен с Условиями
+                                использования и Политикой конфиденциальности</label><br>
+                            <span class="error" id="consent-error"></span><br />
+                        </div>
+
+                        <button type="submit" id="submit-button">Отправить</button>
+                    </div>
                 </div>
-    
-                <div class="number">
-                  <label for="number">Номер</label>
-                  <input
-                    type="number"
-                    id="number"
-                    placeholder="Введите номер"
-                    autocomplete="tel"
-                  /> 
-                  <span class="error" id="number-error"></span><br />
-                </div>
-              </div>
-              <div>
-                <div class="message">
-                  <label for="message">Сообщение</label>
-                  <textarea
-                    id="message"
-                    rows="4"
-                    placeholder="Введите ваше сообщение"
-                    autocomplete="off"
-                  ></textarea>
-                  <span class="error" id="message-error"></span><br />
-                </div>
-                <div class="box">
-                  <div class="checkbox">
-                    <label class="support__container-text">
-                      <input type="checkbox" id="consent" />Я согласен с Условиями
-                      использования и Политикой конфиденциальности</label
-                    ><br>
-                    <span class="error" id="consent-error"></span><br />
-                  </div>
-    
-                  <button type="submit" id="submit-button">Отправить</button>
-                </div>
-              </div>
             </form>
-    </div>
+        </div>
     </section>
-    
+
     <!-- Questions  -->
     <section class="faq-section">
         <div class="faq-header">
@@ -226,103 +201,104 @@
         </div>
     </section>
 
-        <!-- FOOTER -->
+    <!-- FOOTER -->
 
-        <footer class="footer">
-            <div class="footer-card">
-                <div class="card1">
-                    <div class="footer__home">
-                        <span class="footer__title">Главная</span> 
-                        <nav class="footer__nav">
-                            <a href="#">Категории</a>
-                            <a href="#">Устройства</a>
-                            <a href="#">Цены</a>
-                            <a href="#">Часто задаваемые вопросы</a>
-                        </nav>
-                    </div>
-                </div>
-    
-                <div class="card2">
-                    <div class="footer__movies">
-                        <span class="footer__title">Фильмы</span>
-                        <nav class="footer__nav">
-                            <a href="#">Жанры</a>
-                            <a href="#">Тенденции</a>
-                            <a href="#">Новые релизы</a>
-                            <a href="#">Популярные</a>
-                        </nav>  
-                    </div>
-                </div>
-    
-                <div class="card1">
-                    <div class="footer__shows">
-                        <span class="footer__title">Шоу</span>
-                        <nav class="footer__nav">
-                            <a href="#">Жанры</a>
-                            <a href="#">Тенденции</a>
-                            <a href="#">Новые релизы</a>
-                            <a href="#">Популярные</a>
-                        </nav>
-                    </div>
-                </div>
-    
-                <div class="card2">
-                    <div class="footer__support">
-                        <span class="footer__title">Поддержка</span>
-                        <nav class="footer__nav">
-                            <a href="#">Связаться с нами</a>
-                        </nav>
-                    </div>
-                </div>
-    
-                <div class="card1">
-                    <div class="footer__subscription">
-                        <span class="footer__title">Подписка</span>
-                        <nav class="footer__nav">
-                            <a href="#">Планы</a>
-                            <a href="#">Релизы</a>
-                        </nav>
-                    </div>
-                </div>
-    
-                <div class="card2">
-                    <div class="footer__connect">
-                        <span class="footer__title">Свяжитесь с нами</span> 
-                        <div>
-                            <a class="footer__a" href="#">
-                                <img class="footer__logo-link" src="/assets/images/facebook.png" alt="facebook"></a>
-                            <a class="footer__a" href="#">
-                                <img class="footer__logo-link" src="/assets/images/twitter.png" alt="twiter"></a>
-                            <a class="footer__a" href="#">
-                                <img class="footer__logo-link" src="/assets/images/in.png" alt="linkedin"></a>
-                        </div>
-                    </div> 
+    <footer class="footer">
+        <div class="footer-card">
+            <div class="card1">
+                <div class="footer__home">
+                    <span class="footer__title">Главная</span>
+                    <nav class="footer__nav">
+                        <a href="#">Категории</a>
+                        <a href="#">Устройства</a>
+                        <a href="#">Цены</a>
+                        <a href="#">Часто задаваемые вопросы</a>
+                    </nav>
                 </div>
             </div>
-    
-            <div>
-                <div class="footer__border"></div>
-    
-                <div class="footer__end">
-                    <p class="footer__end-text">
-                        @2023 streamvib, Все права защищены
-                    </p>
-                    
-                    <div class="footer__end-nav">
-                        <nav class="footer__end-nav">
-                            <a href="#">Условия использования</a> 
-                            <div class="footer__end-border"></div>
-                            <a href="#">Политика конфиденциальности</a>
-                            <div class="footer__end-border"></div>
-                            <a href="#">Политика использования файлов cookie</a>
-                        </nav>
+
+            <div class="card2">
+                <div class="footer__movies">
+                    <span class="footer__title">Фильмы</span>
+                    <nav class="footer__nav">
+                        <a href="#">Жанры</a>
+                        <a href="#">Тенденции</a>
+                        <a href="#">Новые релизы</a>
+                        <a href="#">Популярные</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="footer__shows">
+                    <span class="footer__title">Шоу</span>
+                    <nav class="footer__nav">
+                        <a href="#">Жанры</a>
+                        <a href="#">Тенденции</a>
+                        <a href="#">Новые релизы</a>
+                        <a href="#">Популярные</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="footer__support">
+                    <span class="footer__title">Поддержка</span>
+                    <nav class="footer__nav">
+                        <a href="#">Связаться с нами</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="footer__subscription">
+                    <span class="footer__title">Подписка</span>
+                    <nav class="footer__nav">
+                        <a href="#">Планы</a>
+                        <a href="#">Релизы</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="footer__connect">
+                    <span class="footer__title">Свяжитесь с нами</span>
+                    <div>
+                        <a class="footer__a" href="#">
+                            <img class="footer__logo-link" src="/assets/images/facebook.png" alt="facebook"></a>
+                        <a class="footer__a" href="#">
+                            <img class="footer__logo-link" src="/assets/images/twitter.png" alt="twiter"></a>
+                        <a class="footer__a" href="#">
+                            <img class="footer__logo-link" src="/assets/images/in.png" alt="linkedin"></a>
                     </div>
                 </div>
             </div>
-            </footer>
+        </div>
 
-            <script src="/assets/script/support.js"></script>
-            <script src="/assets/script/burger_header.js"></script>
-            <script src="/assets/script/main_page_script.js"></script>
+        <div>
+            <div class="footer__border"></div>
+
+            <div class="footer__end">
+                <p class="footer__end-text">
+                    @2023 streamvib, Все права защищены
+                </p>
+
+                <div class="footer__end-nav">
+                    <nav class="footer__end-nav">
+                        <a href="#">Условия использования</a>
+                        <div class="footer__end-border"></div>
+                        <a href="#">Политика конфиденциальности</a>
+                        <div class="footer__end-border"></div>
+                        <a href="#">Политика использования файлов cookie</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/script/support.js"></script>
+    <script src="/assets/script/burger_header.js"></script>
+    <script src="/assets/script/main_page_script.js"></script>
 </body>
+
 </html>

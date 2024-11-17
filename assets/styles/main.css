@@ -301,7 +301,6 @@ body {
   display: inline-block;
   margin: 0 auto;
   padding: 8px 30px 8px 30px;
-  opacity: 0px;
   gap: 16px;
 }
 
@@ -452,7 +451,6 @@ button:hover {
   transition: background-color 0.3s;
   gap: 0px;
   border-radius: 100px 0px 0px 0px;
-  opacity: 0px;
 }
 
 .line.active {
@@ -585,7 +583,8 @@ button:hover {
   border-radius: 12px;
   padding: 25px;
   width: 380px;
-  background: #0F0F0F, linear-gradient 230deg, rgba(229, 0, 0, 0.5) 0%, rgba(229, 0, 0, 0.5) 81.37%;
+  background: #0F0F0F;
+  background: linear-gradient(230deg, rgba(229, 0, 0, 0.5) 0%, rgba(229, 0, 0, 0.5) 81.37%);
 }
 
 .streaming {
@@ -940,7 +939,6 @@ h1 {
     /* Стандартные отступы */
   }
 }
-/* FOOTER */
 footer {
   padding: 0 5% 0 5%;
 }
@@ -1012,7 +1010,7 @@ footer {
 }
 
 /* Laptop 1440*/
-@media (720 <= width <= 1440px) {
+@media (720px <= width <= 1440px) {
   .footer {
     display: flex;
     flex-direction: column;

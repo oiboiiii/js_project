@@ -1,174 +1,167 @@
-    /* FOOTER */
+footer {
+    padding: 0 5% 0 5%;
+}
 
-    // body{
-    //     max-width: 1440px;
-    //     margin: 0 auto;
-    //     background-color: #0F0F0F;
-    // }
-    footer {
-        padding: 0 5% 0 5%;
+.footer-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 50px 100px;
+}
+
+.footer__nav a {
+    text-decoration: none;
+    color: #999999;
+    font-weight: 400;
+    font-size: 17px;
+    display: flex;
+    padding: 10px;
+}
+
+.footer__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: #fff;
+    padding: 10px;
+}
+
+.footer__end {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 100px;
+}
+
+.footer__end-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #999999;
+}
+
+.footer__end-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer__end-nav a {
+    text-decoration: none;
+    color: #999999;
+    margin: 0;
+}
+
+.footer__border {
+    border: 1px solid #262626;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.footer__end-border {
+    border: 1px solid #262626;
+    width: 27px;
+    height: 0px;
+    transform: rotate(-90deg)
+}
+
+/* Laptop 1440*/
+@media(720px <=width <=1440px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__border {
+        max-width: 100%;
+    }
+
+    .card1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-card {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 10px;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: space-between;
+    }
+
+    .footer__border {
+        width: 100%;
+    }
+
+    .footer__end {
+        flex-direction: column;
+        align-items: start;
+        padding: 5px 10px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+@media (426px <=width <=1279px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 15px;
     }
 
     .footer-card {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        align-items: start;
-        padding: 50px 100px;
+        padding: 5px 10px;
+        flex-wrap: wrap;
+        gap: 5px;
     }
+}
 
-    .footer__nav a {
-        text-decoration: none;
-        color: #999999;
-        font-weight: 400;
-        font-size: 17px;
+/*mobile*/
+
+@media(320px <=width <=425px) {
+    .footer {
         display: flex;
-        padding: 10px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 15px;
     }
 
-    .footer__title {
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 150%;
-        color: #fff;
-        padding: 10px;
+    .footer-card {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 10px;
+        flex-wrap: wrap;
+        gap: 5px;
     }
 
     .footer__end {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 25px 100px;
-    }
-
-    .footer__end-text {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 150%;
-        color: #999999;
-    }
-
-    .footer__end-nav {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        gap: 10px;
-        align-items: center;
-    }
-
-    .footer__end-nav a {
-        text-decoration: none;
-        color: #999999;
-        margin: 0;
+        flex-direction: column;
+        align-items: start;
+        padding: 5px 10px;
+        flex-wrap: wrap;
     }
 
     .footer__border {
-        border: 1px solid #262626;
-        margin: 20px auto;
-        width: 90%;
+        width: 100%;
     }
 
-    .footer__end-border {
-        border: 1px solid #262626;
-        width: 27px;
-        height: 0px;
-        transform: rotate(-90deg)
+    .footer__end-nav {
+        flex-wrap: wrap;
     }
 
-    /* Laptop 1440*/
-    @media(720 <=width <=1440px) {
-        .footer {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .footer__border {
-            max-width: 100%;
-        }
-
-        .card1 {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .card2 {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .footer-card {
-            display: flex;
-            flex-direction: column;
-            padding: 5px 10px;
-            flex-wrap: wrap;
-            gap: 5px;
-            justify-content: space-between;
-        }
-
-        .footer__border {
-            width: 100%;
-        }
-
-        .footer__end {
-            flex-direction: column;
-            align-items: start;
-            padding: 5px 10px;
-            flex-wrap: wrap;
-            display: flex;
-            justify-content: center;
-        }
-    }
-
-
-
-    @media (426px <=width <=1279px) {
-        .footer {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            padding: 15px;
-        }
-
-        .footer-card {
-            display: flex;
-            flex-direction: row;
-            padding: 5px 10px;
-            flex-wrap: wrap;
-            gap: 5px;
-        }
-    }
-
-    /*mobile*/
-
-    @media(320px <=width <=425px) {
-        .footer {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            padding: 15px;
-        }
-
-        .footer-card {
-            display: flex;
-            flex-direction: column;
-            padding: 5px 10px;
-            flex-wrap: wrap;
-            gap: 5px;
-        }
-
-        .footer__end {
-            flex-direction: column;
-            align-items: start;
-            padding: 5px 10px;
-            flex-wrap: wrap;
-        }
-
-        .footer__border {
-            width: 100%;
-        }
-
-        .footer__end-nav {
-            flex-wrap: wrap;
-        }
-
-    }
+}
